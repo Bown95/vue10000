@@ -3,6 +3,9 @@
       <!-- header -->
       <mt-header fixed title="Bown-Vue项目"></mt-header>
       <!-- 中间路由 router-view -->
+		<!-- <transition> -->
+			<router-view></router-view>
+		<!-- </transition> -->
       <!-- tabbar -->
       <nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="/home">
@@ -24,8 +27,7 @@
 				<span class="mui-tab-label">搜索</span>
 			</router-link>
 	</nav>
-      <h1>这是APP组件</h1>
-      <router-view></router-view>
+      <!-- <router-view></router-view> -->
     </div>
 </template>
 

@@ -17,10 +17,24 @@ import 'mint-ui/lib/style.css'
 Vue.use(MintUI)
     // 导入 MUI 的样式
 import './mui/css/mui.min.css'
+import './mui/css/icons-extra.css'
+
+// 导入路由组件
+import HomeContainer from './components/tabbar/HomeContainer.vue'
+import MemberContainer from './components/tabbar/MemberContainer.vue'
+import ShopcarContainer from './components/tabbar/ShopcarContainer.vue'
+import SearchContainer from './components/tabbar/SearchContainer.vue'
 
 // 创建路由对象
 var router = new VueRouter({
-    routes: []
+    routes: [
+        { path: '/', redirect: '/home' },
+        { path: '/home', component: HomeContainer },
+        { path: '/member', component: MemberContainer },
+        { path: '/shopcar', component: ShopcarContainer },
+        { path: '/search', component: SearchContainer }
+    ],
+    linkActiveClass: 'mui-active'
 })
 
 
