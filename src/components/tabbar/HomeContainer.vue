@@ -10,7 +10,16 @@
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {}
+  },
+  methods: {
+    getLunbotu() {
+      
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

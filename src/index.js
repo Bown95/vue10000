@@ -3,11 +3,16 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // 手动安装vue-router
 Vue.use(VueRouter)
-    // 导入bootstrap样式
-    // import 'bootstrap/dist/css/bootstrap.css'
-    // import './css/app.css'
-    // // 导入Mui
-    // import './mui/css/mui.css'
+    //导入 vue-resource
+import VueResource from 'vue-resource'
+//安装 vue-resource
+Vue.use(VueResource)
+
+// 导入bootstrap样式
+// import 'bootstrap/dist/css/bootstrap.css'
+// import './css/app.css'
+// // 导入Mui
+// import './mui/css/mui.css'
 
 // 导入APP组件
 import app from './App.vue'
