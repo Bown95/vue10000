@@ -6,10 +6,6 @@
 		<transition>
 			<router-view></router-view>
 		</transition>
-		<!-- <transition> -->
-			<!-- <router-view></router-view> -->
-		<!-- </transition> -->
-      <!-- tabbar -->
       <nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="/home">
 				<span class="mui-icon mui-icon-home"></span>
@@ -41,6 +37,7 @@
 <style lang="scss" scoped>
 .app-container {
   padding-top: 40px;
+	padding-bottom: 50px;
   overflow-x: hidden;
 }
 .v-enter {
